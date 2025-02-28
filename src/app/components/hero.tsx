@@ -6,7 +6,7 @@ export default function Hero(){
         bg-cover
         ">
             <div className="flex">
-                <div className="text-stone-950 text-center my-8 mx-4 w-full">
+                <div className="text-stone-900 text-center my-8 mx-4 w-full">
                    <h6 className='hero-header'>Eco products all in one place.</h6>
                    <p>We outsource the worlds best eco products.</p>
                    <button className="rounded-full bg-green-600 text-white px-4 py-1 my-2">start shopping</button>

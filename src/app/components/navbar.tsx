@@ -3,22 +3,22 @@ import Image from "next/image";
 
 export default function NavBar(){
     return(
-        <div className="flex text-black py-3.5 bg-zinc-200 border-1">
+        <div className="flex text-neutral-800 py-3.5 bg-zinc-200 border-1">
             <div className="text-black px-2 logo">
-                <div className=""><a href="./" className="justify-self-center">EcoStore</a></div>
+                <div className=""><a href="./" className="justify-self-center text-neutral-800">EcoStore</a></div>
             </div>
-            <div className="flex px-3.5 gap-2">
-             <div className="flex">
-             <a href="#" className="self-center">plants</a>
+            <div className="flex px-3.5 gap-2 content-center">
+             <div className="content-center">
+             <a href="#" className="">plants</a>
              </div>
-             <div className="flex">
-                <a href="#" className="self-center">food</a>
+             <div className="content-center">
+                <a href="#" className="">food</a>
              </div>
-             <div className="flex">
-             <a href="#" className="self-center">accessories</a>
+             <div className="content-center">
+             <a href="#" className="">accessories</a>
              </div>
             </div>
-            <div className="flex">
+            <div className="content-center">
                 <button className="rounded-full bg-green-600 text-white px-3 self-center">shop</button>
             </div>
             <div className="flex-1">
@@ -41,8 +41,8 @@ export default function NavBar(){
                  width={23}
                  height={20}
                  alt={""}
-                 className=" self-center"
-                /><span className="self-center">0</span>
+                 className="self-center"
+                /><span className="self-center mt-1">0</span>
                 </Link>
             </div>
         </div>
