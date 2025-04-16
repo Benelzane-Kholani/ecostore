@@ -15,8 +15,8 @@ export default function Deals(){
                 <div className="flex flex-1 bg-neutral-900">
                     <div className="text-white self-center w-full text-center">
                         <h1 className="text-[50px] ">50% off on your first purchase.</h1>
-                        <p>Buy any eco frindly product and get a 50% discount.</p>
-                        <button className="rounded-full bg-green-600 text-white px-3 self-center mt-3">Get started</button>
+                        <p>Buy any eco friendly product and get a 50% discount.</p>
+                        <button className="rounded bg-green-600 text-white px-3 self-center mt-3">Get started</button>
                     </div>
                 </div>
             </div>

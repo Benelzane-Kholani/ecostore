@@ -19,7 +19,7 @@ export default function NavBar(){
              </div>
             </div>
             <div className="content-center">
-                <button className="rounded-full bg-green-600 text-white px-3 self-center">shop</button>
+                <button className="rounded bg-green-600 text-white px-3 self-center">shop</button>
             </div>
             <div className="flex-1">
                 <div className="size-2/3 h-full rounded-full justify-self-center flex bg-zinc-100">
@@ -35,11 +35,11 @@ export default function NavBar(){
                 </div>
             </div>
             <div className="flex">
-                <Link href={""} className="float-end bg-green-600 text-white px-3 mr-2 rounded-full flex">
+                <Link href={""} className="float-end bg-green-600 text-white px-2 mr-2 rounded flex">
                 <Image
                  src={"img/shopping_bag_30dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"}
-                 width={23}
-                 height={20}
+                 width={22}
+                 height={14}
                  alt={""}
                  className="self-center"
                 /><span className="self-center mt-1">0</span>
