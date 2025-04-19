@@ -1,4 +1,3 @@
-import '../style/home.css';
 
 export default function Hero(){
     return(
@@ -8,8 +7,8 @@ export default function Hero(){
             <div className="flex">
                 <div className="text-stone-900 text-center my-8 mx-4 w-full">
                    <h6 className='hero-header'>Eco products all in one place.</h6>
-                   <p>We outsource the worlds best eco products.</p>
-                   <button className="rounded bg-green-600 text-white px-4 py-1 my-2">start shopping</button>
+                   <p className="">We outsource the worlds best eco products.</p>
+                   <div className="my-2"><a href="./shop" className="rounded bg-green-600 text-white px-2 py-2 m-4">start shopping</a></div>
                 </div>
             </div>
         </div>

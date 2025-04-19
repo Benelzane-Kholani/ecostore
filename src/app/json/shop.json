@@ -1,0 +1,13 @@
+
+{
+    "plants": [
+        {
+            "id": 1,
+            "name": "Pot plant",
+            "description": "An indeginous pot plant",
+            "price": 80.00,
+            "image": "/img/pexels-alleksana-4386880.jpg"
+        }
+    ],
+    "food":[{}]
+}
