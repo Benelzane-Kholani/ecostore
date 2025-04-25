@@ -1,20 +1,35 @@
-import Filter from "../components/filter";
+'use client'
+
+import Filter from "../components/filter/filter";
 import Product from "../components/product";
+import {useState, useEffect} from 'react';
+import { Product as storeProduct } from "../type/type";
 
 export default function Shop(){
+    const [ecoProducts, setEcoProducts] = useState<storeProduct[]>();
+
+    useEffect(()=> {
+        async function getProducts(){
+            const res = await fetch('http://localhost:3000/json/shop.json');
+            const products = await res.json();
+            setEcoProducts(products.products);
+            console.log(products.products[0])
+        }
+        getProducts();
+    }, []);
+
+    if(!ecoProducts) return <div className="flex gap-6 p-2">
+        <Filter/>
+    </div>
+
     return(
-        <>
-        <div className="flex gap-3 p-2">
+        <div className="flex gap-6 p-2">
             <Filter/>
-            <div className="flex gap-2">
-            <Product id={1} name="Noodle bowles" price={`R${80.00}`} image={'/products/pexels-tima-miroshnichenko-7879769.jpg'}/>
-            <Product id={1} name="Noodle bowles" price={`R${100.00}`} image={'/products/pexels-scottwebb-1903965.jpg'}/>
-            <Product id={1} name="Noodle bowles" price={`R${80.00}`} image={'/products/pexels-thepaintedsquare-3361496.jpg'}/>
-            <Product id={1} name="Noodle bowles" price={`R${80.00}`} image={'/products/pexels-cup-of-couple-8015705.jpg'}/>
-            <Product id={1} name="Noodle bowles" price={`R${80.00}`} image={'/products/pexels-alleksana-4386871.jpg'}/>
+            <div className="flex gap-2 p-2 inline flex-wrap">
+            {ecoProducts.map((product) => (
+                <Product key={product.id} id={product.id} name={product.name} price={product.price} image={product.image} />            
+            ))}
             </div>
         </div>
-       
-        </>
     )
 }

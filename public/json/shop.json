@@ -1,0 +1,61 @@
+
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Pot plant",
+            "description": "An indeginous pot plant",
+            "price": 80.00,
+            "category": "plants",
+            "image": "/products/pexels-scottwebb-1903965.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Cutlery",
+            "description": "Wooden cutlery",
+            "price": 100.00,
+            "category": "accessories",
+            "image": "/products/pexels-alleksana-4386871.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Wooden toothbrush",
+            "description": "Wooden toothbrush collection",
+            "price": 70.00,
+            "category": "accessories",
+            "image": "/products/pexels-craytive-4980170.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Disposable cups",
+            "description": "Paper disposable cups",
+            "price": 120.00,
+            "category": "accessories",
+            "image": "/products/pexels-cup-of-couple-8015705.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Recyclable bag",
+            "description": "Non recyclable bags",
+            "price": 30.00,
+            "category": "accessories",
+            "image": "/products/pexels-readymade-3850478.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Green pot plant",
+            "description": "An indeginous pot plant",
+            "price": 20.00,
+            "category": "plants",
+            "image": "/products/pexels-thepaintedsquare-3361496.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Pot plant",
+            "description": "Wooden spoons and forks.",
+            "price": 15.00,
+            "category": "accessories",
+            "image": "/products/pexels-tima-miroshnichenko-7879769.jpg"
+        }
+    ]
+}
