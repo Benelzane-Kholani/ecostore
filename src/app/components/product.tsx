@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function Product({id, name, price, image} : {id: number, name: string, price: string, image: string}){
 
     return(
-        <>
         <div className="bg-zinc-100 rounded p-2 text-center self-start">
             <Link href={`/product/${id}`}>
             <Image
@@ -15,7 +14,7 @@ export default function Product({id, name, price, image} : {id: number, name: st
                 src={image}
             />
             </Link>
-            <h1 className="text-green-600">{price}</h1>
+            <h1 className="text-green-600">{`R${price}`}</h1>
             <h1 className="">{name}</h1>
             <div className="flex justify-center">
             <button className="bg-green-600 text-white px-1 mr-2 rounded flex">
@@ -38,6 +37,5 @@ export default function Product({id, name, price, image} : {id: number, name: st
             </button>
             </div>
         </div>
-        </>
     )
 }

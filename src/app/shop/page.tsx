@@ -13,7 +13,6 @@ export default function Shop(){
             const res = await fetch('http://localhost:3000/json/shop.json');
             const products = await res.json();
             setEcoProducts(products.products);
-            console.log(products.products[0])
         }
         getProducts();
     }, []);
